@@ -1,1 +1,166 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=System.Runtime">
 
+    <!--  Generic  -->
+    <system:String x:Key="Str.Login">Login</system:String>
+    <system:String x:Key="Str.Password">Password</system:String>
+    <system:String x:Key="Str.ExitConfirmation" xml:space="preserve">Bạn có muốn đóng ứng dụng không?&#13;Bạn có thể sử dụng nút thu nhỏ để ẩn cửa sổ cài đặt (ứng dụng vẫn sẽ khả dụng thông qua biểu tượng ở khay hệ thống).</system:String>
+    <system:String x:Key="Str.ExitConfirmationCaption">Exit confirmation</system:String>
+    <system:String x:Key="Str.NewVersion">Có phiên bản mới rồi!</system:String>
+
+    <!--  Notifications  -->
+    <system:String x:Key="Str.Notification.CaptchaPass" xml:space="preserve">Vui lòng hoàn thành mã xác nhận (captcha) trên trang web để sử dụng dịch vụ.&#13;Đồng thời, nó cũng có thể được yêu cầu cho mỗi proxy đã đăng ký.</system:String>
+
+    <!--  Titles  -->
+    <system:String x:Key="Str.Title.SettingWindow" xml:space="preserve">Cài đặt - Translumo</system:String>
+    <system:String x:Key="Str.Title.BrowserWindow" xml:space="preserve">Browser - Translumo</system:String>
+
+    <!--  Tray  -->
+    <system:String x:Key="Str.Tray.ShowHideSettings">Ẩn/Hiện cài đặt</system:String>
+    <system:String x:Key="Str.Tray.ShowHideTranslation">Ẩn/Hiện cửa sổ dịch thuật</system:String>
+    <system:String x:Key="Str.Tray.Exit">Exit</system:String>
+
+    <!--  Chat  -->
+    <system:String x:Key="Str.Chat.SettingsOpened">Đóng Cài đặt để bắt đầu dịch</system:String>
+    <system:String x:Key="Str.Chat.WindowLocked">Cửa sổ dịch thuật đã bị khóa</system:String>
+    <system:String x:Key="Str.Chat.WindowUnlocked">Cửa sổ dịch thuật đã được mở khóa</system:String>
+
+    <!--  Language settings  -->
+    <system:String x:Key="Str.LangSettings.SourceLang">Ngôn ngữ gốc</system:String>
+    <system:String x:Key="Str.LangSettings.TranslationLang">Ngôn ngữ dịch</system:String>
+    <system:String x:Key="Str.LangSettings.Translator">Translator</system:String>
+    <system:String x:Key="Str.LangSettings.TtsSystem">Text to speech system</system:String>
+
+    <!--  Hotkeys descriptions  -->
+    <system:String x:Key="Str.Hotkeys.ChatVisibility">Ẩn/Hiện cửa sổ dịch thuật</system:String>
+    <system:String x:Key="Str.Hotkeys.SettingsVisibility">Đóng/Mở cửa sổ Cài đặt</system:String>
+    <system:String x:Key="Str.Hotkeys.SelectArea">Chọn vùng chụp màn hình</system:String>
+    <system:String x:Key="Str.Hotkeys.OnOffTranslation">Bật/tắt dịch thuật</system:String>
+    <system:String x:Key="Str.Hotkeys.ShowSelectArea">Hiển thị vùng chụp màn hình đã chọn</system:String>
+    <system:String x:Key="Str.Hotkeys.OnceTranslate">Chọn vùng và dịch văn bản một lần</system:String>
+    <system:String x:Key="Str.Hotkeys.WindowChangeStyle">Khóa/mở khóa cửa sổ dịch thuật</system:String>
+    <system:String x:Key="Str.Hotkeys.SettingsShowHelp">Nhấn '{0}' để mở Cài đặt</system:String>
+    <system:String x:Key="Str.Hotkeys.SelectAreaHelp">Nhấn '{0}' để chọn vùng nhận dạng</system:String>
+    <system:String x:Key="Str.Hotkeys.OnTranslationHelp">Nhấn '{0}' để bắt đầu dịch</system:String>
+    <system:String x:Key="Str.Hotkeys.GeneralHelp">Để điều khiển ứng dụng, sử dụng menu ngữ cảnh từ khay hệ thống hoặc các phím tắt sau:</system:String>
+
+    <!--  Appearance settings  -->
+    <system:String x:Key="Str.AppearanceSettings.WindowColor">Window color</system:String>
+    <system:String x:Key="Str.AppearanceSettings.FontColor">Màu chữ</system:String>
+    <system:String x:Key="Str.AppearanceSettings.FontSize">Kích thước chữ</system:String>
+    <system:String x:Key="Str.AppearanceSettings.Bold">Bold</system:String>
+    <system:String x:Key="Str.AppearanceSettings.ExcludeFromCaptue">Loại trừ khỏi việc ghi lại</system:String>
+    <system:String x:Key="Str.AppearanceSettings.LineSpacing">Khoảng cách dòng</system:String>
+    <system:String x:Key="Str.AppearanceSettings.WindowOpacity">Độ mờ của cửa sổ</system:String>
+    <system:String x:Key="Str.AppearanceSettings.FontSizePanelCaption">Đổi kích thước chữ</system:String>
+    <system:String x:Key="Str.AppearanceSettings.FontColorPanelCaption">Đổi màu chữ</system:String>
+    <system:String x:Key="Str.AppearanceSettings.KeepFormatting">Giữ nguyên định dạng nguồn</system:String>
+    <system:String x:Key="Str.AppearanceSettings.Left">Căn chỉnh Văn bản sang Trái</system:String>
+    <system:String x:Key="Str.AppearanceSettings.Center">Căn chỉnh Văn bản ở Giữa</system:String>
+    <system:String x:Key="Str.AppearanceSettings.Right">Căn chỉnh Văn bản sang Phải</system:String>
+    <system:String x:Key="Str.AppearanceSettings.Justify">Căn đều Văn bản</system:String>
+    <system:String x:Key="Str.AppearanceSettings.AutoClearTexts">Tự dọn sạch cửa sổ</system:String>
+    <system:String x:Key="Str.AppearanceSettings.AutoClearTexts2">sau khi không hoạt động</system:String>
+    <system:String x:Key="Str.AppearanceSettings.Ms">ms</system:String>
+
+
+    <!--  Proxy settings  -->
+    <system:String x:Key="Str.ProxySettings.Proxy">Proxy</system:String>
+    <system:String x:Key="Str.ProxySettings.IpAddress">IP address</system:String>
+    <system:String x:Key="Str.ProxySettings.Port">Port</system:String>
+    <system:String x:Key="Str.ProxySettings.Note" xml:space="preserve">Sử dụng proxy IPv4 để tránh bị các dịch vụ dịch thuật chặn khi có số lượng lớn yêu cầu đồng thời.&#13;Ứng dụng sẽ phân bổ nhóm địa chỉ proxy giữa các yêu cầu.</system:String>
+    <system:String x:Key="Str.ProxySettings.Caption">Proxy list — change</system:String>
+
+
+    <!--  OCR settings  -->
+    <system:String x:Key="Str.OcrSettings.TesseractOcr">Tesseract OCR</system:String>
+    <system:String x:Key="Str.OcrSettings.WindowsOcr">Windows OCR</system:String>
+    <system:String x:Key="Str.OcrSettings.EasyOcr">EasyOCR</system:String>
+    <system:String x:Key="Str.OcrSettings.TesseractOcrDesc" xml:space="preserve">Tesseract 5.0 với chế độ LSTM. Một trong những giải pháp OCR mã nguồn mở phổ biến sớm nhất.&#13;Nhận dạng văn bản ổn định với nền đơn giản, đồng nhất.&#13;&lt;Bold&gt;Ảnh hưởng đến hiệu năng ::&lt;/Bold&gt; thấp</system:String>
+    <system:String x:Key="Str.OcrSettings.WindowsOcrDesc" xml:space="preserve">Giải pháp OCR gốc của Microsoft. Có khả năng xử lý nền phức tạp hơn Tesseract.&#13;&lt;Bold&gt;Ảnh hưởng đến hiệu năng ::&lt;/Bold&gt; nhẹ</system:String>
+    <system:String x:Key="Str.OcrSettings.WindowsOcrDesc2">Có thể cần phải cài đặt thêm các gói ngôn ngữ bổ sung</system:String>
+    <system:String x:Key="Str.OcrSettings.EasyOcrDesc" xml:space="preserve">Giải pháp OCR mã nguồn mở tiên tiến nhất bởi Jaided AI.&#13;Độ chính xác cao trong nhận dạng văn bản ngay cả với nền phức tạp và phông chữ không phổ biến.&#13;&lt;Bold&gt;Ảnh hưởng đến hiệu năng ::&lt;/Bold&gt; Cao</system:String>
+    <system:String x:Key="Str.OcrSettings.EasyOcrDesc2">Yêu cầu cài đặt các gói bổ sung (Python, PyTorch)</system:String>
+
+    <!--  About window  -->
+    <system:String x:Key="Str.About.MaintainedBy">Owner and Maintainer Aleksei Vekhov</system:String>
+    <system:String x:Key="Str.About.DevelopedBy">Author Danil Iushkov</system:String>
+    <system:String x:Key="Str.About.ProjectPage">Project page</system:String>
+    <system:String x:Key="Str.About.ReportIssue">Report an issue</system:String>
+
+    <!--  Navigation menu  -->
+    <system:String x:Key="Str.Navigation.Languages">Ngôn ngữ</system:String>
+    <system:String x:Key="Str.Navigation.Appearance">Giao diện</system:String>
+    <system:String x:Key="Str.Navigation.Ocr">Nhận dạng văn bản</system:String>
+    <system:String x:Key="Str.Navigation.HotKeys">Hotkeys</system:String>
+
+    <!--  Languages  -->
+    <system:String x:Key="Str.Languages.English">English</system:String>
+    <system:String x:Key="Str.Languages.Russian">Russian</system:String>
+    <system:String x:Key="Str.Languages.Japanese">Japanese</system:String>
+    <system:String x:Key="Str.Languages.Korean">Korean</system:String>
+    <system:String x:Key="Str.Languages.Chinese">Chinese (Simplified)</system:String>
+    <system:String x:Key="Str.Languages.Italian">Italian</system:String>
+    <system:String x:Key="Str.Languages.French">French</system:String>
+    <system:String x:Key="Str.Languages.German">German</system:String>
+    <system:String x:Key="Str.Languages.Spanish">Spanish</system:String>
+    <system:String x:Key="Str.Languages.Portuguese">Portuguese</system:String>
+    <system:String x:Key="Str.Languages.Vietnamese">Tiếng Việt</system:String>
+    <system:String x:Key="Str.Languages.Turkish">Turkish</system:String>
+    <system:String x:Key="Str.Languages.Thai">Thai</system:String>
+    <system:String x:Key="Str.Languages.Arabic">Arabic</system:String>
+    <system:String x:Key="Str.Languages.Greek">Greek</system:String>
+    <system:String x:Key="Str.Languages.PortugueseBrazil">Portuguese (BR)</system:String>
+    <system:String x:Key="Str.Languages.Polish">Polish</system:String>
+    <system:String x:Key="Str.Languages.Belarusian">Belarusian</system:String>
+    <system:String x:Key="Str.Languages.Persian">Persian</system:String>
+    <system:String x:Key="Str.Languages.Indonesian">Indonesian</system:String>
+    <system:String x:Key="Str.Languages.Bulgarian">Bulgarian</system:String>
+    <system:String x:Key="Str.Languages.Czech">Czech</system:String>
+    <system:String x:Key="Str.Languages.Danish">Danish</system:String>
+    <system:String x:Key="Str.Languages.Estonian">Estonian</system:String>
+    <system:String x:Key="Str.Languages.Finnish">Finnish</system:String>
+    <system:String x:Key="Str.Languages.Hungarian">Hungarian</system:String>
+    <system:String x:Key="Str.Languages.Lithuanian">Lithuanian</system:String>
+    <system:String x:Key="Str.Languages.Latvian">Latvian</system:String>
+    <system:String x:Key="Str.Languages.Dutch">Dutch</system:String>
+    <system:String x:Key="Str.Languages.Romanian">Romanian</system:String>
+    <system:String x:Key="Str.Languages.Slovak">Slovak</system:String>
+    <system:String x:Key="Str.Languages.Slovenian">Slovenian</system:String>
+    <system:String x:Key="Str.Languages.Swedish">Swedish</system:String>
+    <system:String x:Key="Str.Languages.Ukrainian">Ukrainian</system:String>
+
+    <!--  Dialog stages  -->
+    <system:String x:Key="Str.Stages.CheckPyModules">Đang kiểm tra các module đã cài đặt...</system:String>
+    <system:String x:Key="Str.Stages.PyModulesQuestion" xml:space="preserve">Các module Python cần thiết chưa được cài đặt. Bạn có muốn cài đặt chúng ngay bây giờ không?&#13;Tùy chọn này chỉ khả dụng cho các GPU của NVIDIA!</system:String>
+    <system:String x:Key="Str.Stages.PyModulesQuestion2" xml:space="preserve">Các module cần thiết sẽ chiếm khoảng 5GB dung lượng ổ đĩa.&#13;Quá trình cài đặt có thể mất từ vài phút đến một giờ.&#13;Bạn muốn tiếp tục chứ?</system:String>
+    <system:String x:Key="Str.Stages.InstallationPyModule1">(1/3) Đang cài module 'pytorch'...</system:String>
+    <system:String x:Key="Str.Stages.InstallationPyModule2">(2/3) Đang cài module 'easyocr'...</system:String>
+    <system:String x:Key="Str.Stages.InstallationPyModule3">(3/3) Đang cài module 'pillow'...</system:String>
+    <system:String x:Key="Str.Stages.InstallationPyModuleTemplate">Đang cài module {0}' ...</system:String>
+    <system:String x:Key="Str.Stages.PyModulesInstalled">Các module cần thiết đã cài xong rồi</system:String>
+    <system:String x:Key="Str.Stages.PyModulesCheckError">Không thể truy cập Python để kiểm tra các module</system:String>
+    <system:String x:Key="Str.Stages.CheckLangPack">Đang kiểm tra cài đặt gói ngôn ngữ...</system:String>
+    <system:String x:Key="Str.Stages.OCRLangPackQuestion" xml:space="preserve">Tính năng nhận dạng văn bản (OCR) cho ngôn ngữ '{0}' chưa được cài đặt trên Windows.&#13;Bạn có muốn cài nó luôn không?</system:String>
+    <system:String x:Key="Str.Stages.TTSLangPackQuestion" xml:space="preserve">Tính năng chuyển văn bản thành giọng nói (TTS) cho ngôn ngữ '{0}' chưa được cài đặt trên Windows.&#13;Bạn có muốn cài nó luôn không?</system:String>
+    <system:String x:Key="Str.Stages.InstallationLangPack">Đang cài gói ngôn ngữ...</system:String>
+    <system:String x:Key="Str.Stages.LangPackInstalledRestart">Gói ngôn ngữ đã được cài xong. Hãy khởi động lại máy tính</system:String>
+    <system:String x:Key="Str.Stages.LangPackInstalledTtsRestart" xml:space="preserve">Gói ngôn ngữ đã được cài đặt.&#13;Nếu tính năng TTS không hoạt động, hãy thử khởi động lại ứng dụng.</system:String>
+    <system:String x:Key="Str.Stages.InstallationLangError">Lỗi cài đặt gói: '{0}'</system:String>
+    <system:String x:Key="Str.Stages.CheckLangPackError" xml:space="preserve">feature options	Lỗi không mong muốn khi kiểm tra các tùy chọn tính năng của Windows.&#13;Hãy chắc chắn là bạn đang chạy ứng dụng với quyền admin.</system:String>
+    <system:String x:Key="Str.Stages.SwitchLanguage">Đang chuyển đổi ngôn ngữ...</system:String>
+    <system:String x:Key="Str.Stages.SwitchLanguageError">Lỗi khi chuyển đổi ngôn ngữ: '{0}'</system:String>
+    <system:String x:Key="Str.Stages.TtsNotSupportLanguageTemplate">{0} '{1}' không hỗ trợ ngôn ngữ '{2}'</system:String>
+
+    <!--  Buttons  -->
+    <system:String x:Key="Str.Button.SettingProxy">Cấu hình proxy</system:String>
+    <system:String x:Key="Str.Button.ShowText">Hiện nội dung mẫu</system:String>
+    <system:String x:Key="Str.Button.Apply">Áp dụng</system:String>
+
+    <system:String x:Key="Str.Lookupper.ProjectNote">Dự án chính mà tôi đang làm việc tại:</system:String>
+    <system:String x:Key="Str.Lookupper.Url">https://lookupper.com</system:String>
+
+
+</ResourceDictionary>
